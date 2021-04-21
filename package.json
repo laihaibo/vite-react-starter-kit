@@ -2,8 +2,8 @@
   "name": "vite-react-starter-kit",
   "version": "0.0.0",
   "scripts": {
-    "start": "vite",
-    "build": "tsc && vite build",
+    "start": "vite --mode development",
+    "build": "tsc && vite build --mode production",
     "serve": "vite preview",
     "format": "prettier --write ./src",
     "lint": "eslint ./src --ext .jsx,.tsx,.js,.ts",

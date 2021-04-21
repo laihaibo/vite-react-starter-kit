@@ -1,7 +1,9 @@
 import Axios from "axios";
 import { Toast } from "zarm";
+import { BASEURL } from "../config";
 
-const baseURL = "";
+const { MODE } = import.meta.env;
+const baseURL = BASEURL[MODE].apiBaseUrl;
 const axios = Axios.create({ baseURL, timeout: 20000 });
 
 // 前置拦截器
