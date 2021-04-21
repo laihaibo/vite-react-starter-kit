@@ -27,5 +27,13 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/api/, "")
       }
     }
+  },
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+        info: resolve(__dirname, "redirect/index.html")
+      }
+    }
   }
 });

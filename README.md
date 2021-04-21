@@ -4,8 +4,6 @@ vite-react-starter-kit
 
 ## todo
 
-- 多页应用
-- mobx 最佳实践
 - 单元测试
 
 ## feature
@@ -14,8 +12,11 @@ vite-react-starter-kit
 
 - mobx 状态管理
 - mobx-react-lite 状态管理
+- mobx 最佳实践
 - zarm ui 框架
 - axios http 请求
+- 多页应用
+- 根据环境使用不同请求地址
 
 ### 代码规范
 

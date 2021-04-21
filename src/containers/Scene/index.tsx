@@ -1,21 +1,21 @@
 // eslint-disable-next-line no-use-before-define
 import React from "react";
-import { useLocalStore, observer } from "mobx-react";
+import { observer } from "mobx-react";
 import { Button } from "zarm";
-import uiStore from "../../stores/uiStore";
+import { useStores } from "../../stores";
 
 import styles from "./index.module.css";
 
-// 使用uselocalstore
+// 使用context
 function Index() {
-  const store = useLocalStore(() => uiStore);
+  const { uiStore } = useStores();
 
   return (
     <div className={styles.Index}>
-      <Button theme="primary" onClick={() => store.increment()}>
-        Plus 1
+      <Button theme="primary" onClick={() => uiStore.increment()}>
+        inject: Plus 1
       </Button>
-      <div>{uiStore.price}</div>
+      {uiStore.price}
     </div>
   );
 }
