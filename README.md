@@ -67,3 +67,8 @@ yarn build
 
 - npm install commitizen -g
 - git config --global core.autocrlf false
+
+
+### git
+- git add .
+- git cz
